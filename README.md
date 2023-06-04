@@ -4,6 +4,19 @@ Using HTML, CSS, Javascript, React, and Tailwind CSS <br>
 Responsive Layout with Feature: Navigation Page, Can Search by picture name, filter by category, and see detail picture, etc <br>
 Tailwind Flowbite: Hero, Card, Carousel, Modal, etc
 
+## Layout
+![screencapture-localhost-3000-2023-06-04-08_16_37](https://github.com/Frontend-OneSide-BRI/Mini_Project_2_FE_I-Gede-Arya-Danny-Pratama/assets/75374189/850377ea-bfaf-4d34-a2cc-723573add9d9)
+
+<br>
+
+![screencapture-localhost-3000-gallery-2023-06-04-18_45_50](https://github.com/Frontend-OneSide-BRI/Mini_Project_2_FE_I-Gede-Arya-Danny-Pratama/assets/75374189/02843d38-fed1-43f0-9a96-fad06267ea24)
+
+<br>
+
+![detail](https://github.com/Frontend-OneSide-BRI/Mini_Project_2_FE_I-Gede-Arya-Danny-Pratama/assets/75374189/7406e59e-a138-4ce9-96e5-156a00c1dd98)
+
+<br>
+
 ## Assignments
 Subject: Mini Project 2 Front End <br>
 Types: Mini Projects <br>
@@ -21,7 +34,6 @@ Using React Components <br>
 Using React Navigation <br>
 Neat UI/UX arrangement <br>
 
-
 ## Guidelines and How to Submit
 Tasks are done by writing code that is neat and easy to read <br>
 Can be done using Bahasa or English <br>
@@ -31,10 +43,5 @@ File name: Mini_Project_2_FE_[Name].zip <br>
 ## Note
 Wev Recommendation Example: https://www.gettyimages.com/
 
-## Output Layout
-![screencapture-localhost-3000-2023-06-04-08_16_37](https://github.com/Frontend-OneSide-BRI/Mini_Project_2_FE_I-Gede-Arya-Danny-Pratama/assets/75374189/850377ea-bfaf-4d34-a2cc-723573add9d9)
 
-<br>
-
-![screencapture-localhost-3000-gallery-2023-06-04-08_17_18](https://github.com/Frontend-OneSide-BRI/Mini_Project_2_FE_I-Gede-Arya-Danny-Pratama/assets/75374189/71b0e6e4-1929-442b-a770-a3fc482a9224)
 
