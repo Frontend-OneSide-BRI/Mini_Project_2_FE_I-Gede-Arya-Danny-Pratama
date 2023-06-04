@@ -55,10 +55,63 @@ export const Content = () => {
   return (
     <div>
       <div className="container mx-auto mt-5 py-5">
-        <div className="text-center text-3xl font-bold">
+        <div className="text-center text-4xl font-bold font-mono">
           <p>What do you want to Search ?</p>
         </div>
-        <div className="flex justify-center space-x-4 mt-5">
+
+        <form className="flex justify-center items-center mt-5">
+          <label htmlFor="simple-search" className="sr-only">
+            Search
+          </label>
+          <div className="relative w-2/3">
+            <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+              <svg
+                aria-hidden="true"
+                className="w-5 h-5 text-gray-500 dark:text-gray-400"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                  clipRule="evenodd"
+                />
+              </svg>
+            </div>
+            <input
+              type="text"
+              id="simple-search"
+              className="text-center bg-gray-50 border border-gray-300 text-gray-900 text-lg rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              placeholder="Type Image name"
+              value={searchTerm}
+              onChange={handleSearch}
+              required
+            />
+          </div>
+          {/* <button
+            type="submit"
+            className="p-2.5 ml-2 text-sm font-medium text-white bg-blue-700 rounded-lg border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          >
+            <svg
+              className="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+              />
+            </svg>
+            <span className="sr-only">Search</span>
+          </button> */}
+        </form>
+
+        {/* <div className="flex justify-center space-x-4 mt-5">
           <input
             type="text"
             className="border border-grey-300 rounded py-2 px-4 w-2/3 text-center"
@@ -66,16 +119,16 @@ export const Content = () => {
             value={searchTerm}
             onChange={handleSearch}
           />
-        </div>
+        </div> */}
       </div>
 
-      <div className="container mx-auto py-8">
-        <div className="flex justify-center space-x-4 mb-4">
+      <div className="grid content-center justify-items-center mt-5">
+        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-7 gap-5 mb-4 font-sans">
           <button
             className={`${
               activeFilter === null
-                ? "bg-stone-500 text-white"
-                : "bg-gray-300 text-gray-700"
+                ? "bg-emerald-600 hover:bg-emerald-700 text-white"
+                : "bg-gray-300 hover:bg-gray-400 text-gray-700 hover:text-white"
             } py-2 px-4 rounded`}
             onClick={() => handleFilterClick("all")}
           >
@@ -84,8 +137,8 @@ export const Content = () => {
           <button
             className={`${
               activeFilter === "nature"
-                ? "bg-stone-500 text-white"
-                : "bg-gray-300 text-gray-700"
+                ? "bg-emerald-600 hover:bg-emerald-700 text-white"
+                : "bg-gray-300 hover:bg-gray-400 text-gray-700 hover:text-white"
             } py-2 px-4 rounded`}
             onClick={() => handleFilterClick("nature")}
           >
@@ -94,8 +147,8 @@ export const Content = () => {
           <button
             className={`${
               activeFilter === "animals"
-                ? "bg-stone-500 text-white"
-                : "bg-gray-300 text-gray-700"
+                ? "bg-emerald-600 hover:bg-emerald-700 text-white"
+                : "bg-gray-300 hover:bg-gray-400 text-gray-700 hover:text-white"
             } py-2 px-4 rounded`}
             onClick={() => handleFilterClick("animals")}
           >
@@ -104,8 +157,8 @@ export const Content = () => {
           <button
             className={`${
               activeFilter === "sport"
-                ? "bg-stone-500 text-white"
-                : "bg-gray-300 text-gray-700"
+                ? "bg-emerald-600 hover:bg-emerald-700 text-white"
+                : "bg-gray-300 hover:bg-gray-400 text-gray-700 hover:text-white"
             } py-2 px-4 rounded`}
             onClick={() => handleFilterClick("sport")}
           >
@@ -114,8 +167,8 @@ export const Content = () => {
           <button
             className={`${
               activeFilter === "people"
-                ? "bg-stone-500 text-white"
-                : "bg-gray-300 text-gray-700"
+                ? "bg-emerald-600 hover:bg-emerald-700 text-white"
+                : "bg-gray-300 hover:bg-gray-400 text-gray-700 hover:text-white"
             } py-2 px-4 rounded`}
             onClick={() => handleFilterClick("people")}
           >
@@ -124,8 +177,8 @@ export const Content = () => {
           <button
             className={`${
               activeFilter === "food"
-                ? "bg-stone-500 text-white"
-                : "bg-gray-300 text-gray-700"
+                ? "bg-emerald-600 hover:bg-emerald-700 text-white"
+                : "bg-gray-300 hover:bg-gray-400 text-gray-700 hover:text-white"
             } py-2 px-4 rounded`}
             onClick={() => handleFilterClick("food")}
           >
@@ -134,8 +187,8 @@ export const Content = () => {
           <button
             className={`${
               activeFilter === "cars"
-                ? "bg-stone-500 text-white"
-                : "bg-gray-300 text-gray-700"
+                ? "bg-emerald-600 hover:bg-emerald-700 text-white"
+                : "bg-gray-300 hover:bg-gray-400 text-gray-700 hover:text-white"
             } py-2 px-4 rounded`}
             onClick={() => handleFilterClick("cars")}
           >
@@ -143,11 +196,11 @@ export const Content = () => {
           </button>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+        <div className="px-6 grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 gap-4 mt-5">
           {filteredItems.map((item) => (
             <div
               key={item.id}
-              className="text-center bg-white rounded-lg shadow-lg p-4"
+              className="text-center bg-white rounded-lg border-2 border-slate-300 hover:shadow-2xl p-4 "
             >
               <img
                 src={item.image}
@@ -158,7 +211,7 @@ export const Content = () => {
                 <h5 className="text-lg font-bold mb-1">{item.alt}</h5>
                 {/* <p className="text-gray-700">{item.description}</p> */}
                 <button
-                  className="bg-sky-700 text-white py-2 px-4 rounded mt-2"
+                  className="bg-sky-700 hover:bg-sky-900 text-white py-2 px-4 rounded mt-2"
                   onClick={() => openModal(item.id)}
                 >
                   View Details
@@ -230,7 +283,7 @@ export const Content = () => {
                     <div className="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
                       <button
                         type="button"
-                        className="mt-3 inline-flex w-full justify-center rounded-md bg-amber-400 px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-amber-600 sm:mt-0 sm:w-auto"
+                        className="mt-3 inline-flex w-full justify-center rounded-md bg-amber-400 px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-amber-500 sm:mt-0 sm:w-auto"
                         ref={cancelButtonRef}
                         onClick={closeModal}
                       >
