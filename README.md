@@ -34,6 +34,7 @@ Wev Recommendation Example: https://www.gettyimages.com/
 ## Output Layout
 ![screencapture-localhost-3000-2023-06-04-08_16_37](https://github.com/Frontend-OneSide-BRI/Mini_Project_2_FE_I-Gede-Arya-Danny-Pratama/assets/75374189/850377ea-bfaf-4d34-a2cc-723573add9d9)
 
+<br>
 
 ![screencapture-localhost-3000-gallery-2023-06-04-08_17_18](https://github.com/Frontend-OneSide-BRI/Mini_Project_2_FE_I-Gede-Arya-Danny-Pratama/assets/75374189/71b0e6e4-1929-442b-a770-a3fc482a9224)
 
